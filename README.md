@@ -1,4 +1,4 @@
 MXNibLoader
 ===========
 
-Easily load UIViews from NIB's in code.
+Easily load UIViews from NIBs in code.
