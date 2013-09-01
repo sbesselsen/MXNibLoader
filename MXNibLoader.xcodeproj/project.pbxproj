@@ -13,12 +13,14 @@
 		32AA3D1217D39BE700EC78E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32AA3D1017D39BE700EC78E0 /* InfoPlist.strings */; };
 		32AA3D1417D39BE700EC78E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AA3D1317D39BE700EC78E0 /* main.m */; };
 		32AA3D1817D39BE700EC78E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AA3D1717D39BE700EC78E0 /* AppDelegate.m */; };
-		32AA3D1A17D39BE700EC78E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AA3D1917D39BE700EC78E0 /* Images.xcassets */; };
 		32AA3D2117D39BE700EC78E0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AA3D2017D39BE700EC78E0 /* XCTest.framework */; };
 		32AA3D2217D39BE700EC78E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AA3D0717D39BE700EC78E0 /* Foundation.framework */; };
 		32AA3D2317D39BE700EC78E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AA3D0B17D39BE700EC78E0 /* UIKit.framework */; };
 		32AA3D2B17D39BE800EC78E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32AA3D2917D39BE800EC78E0 /* InfoPlist.strings */; };
 		32AA3D2D17D39BE800EC78E0 /* MXNibLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AA3D2C17D39BE800EC78E0 /* MXNibLoaderTests.m */; };
+		32AA3D3817D39C1200EC78E0 /* MXNibLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AA3D3717D39C1200EC78E0 /* MXNibLoader.m */; };
+		32AA3D3D17D39E2C00EC78E0 /* UIView+MXNibLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AA3D3C17D39E2C00EC78E0 /* UIView+MXNibLoader.m */; };
+		32AA3D3E17D39EF000EC78E0 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32AA3D3A17D39E0100EC78E0 /* DemoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +44,16 @@
 		32AA3D1517D39BE700EC78E0 /* MXNibLoader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MXNibLoader-Prefix.pch"; sourceTree = "<group>"; };
 		32AA3D1617D39BE700EC78E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32AA3D1717D39BE700EC78E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		32AA3D1917D39BE700EC78E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32AA3D1F17D39BE700EC78E0 /* MXNibLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MXNibLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AA3D2017D39BE700EC78E0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		32AA3D2817D39BE800EC78E0 /* MXNibLoaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MXNibLoaderTests-Info.plist"; sourceTree = "<group>"; };
 		32AA3D2A17D39BE800EC78E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32AA3D2C17D39BE800EC78E0 /* MXNibLoaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXNibLoaderTests.m; sourceTree = "<group>"; };
+		32AA3D3617D39C1200EC78E0 /* MXNibLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNibLoader.h; sourceTree = "<group>"; };
+		32AA3D3717D39C1200EC78E0 /* MXNibLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNibLoader.m; sourceTree = "<group>"; };
+		32AA3D3A17D39E0100EC78E0 /* DemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
+		32AA3D3B17D39E2C00EC78E0 /* UIView+MXNibLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MXNibLoader.h"; sourceTree = "<group>"; };
+		32AA3D3C17D39E2C00EC78E0 /* UIView+MXNibLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MXNibLoader.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +115,12 @@
 			children = (
 				32AA3D1617D39BE700EC78E0 /* AppDelegate.h */,
 				32AA3D1717D39BE700EC78E0 /* AppDelegate.m */,
-				32AA3D1917D39BE700EC78E0 /* Images.xcassets */,
+				32AA3D3A17D39E0100EC78E0 /* DemoView.xib */,
 				32AA3D0E17D39BE700EC78E0 /* Supporting Files */,
+				32AA3D3617D39C1200EC78E0 /* MXNibLoader.h */,
+				32AA3D3717D39C1200EC78E0 /* MXNibLoader.m */,
+				32AA3D3B17D39E2C00EC78E0 /* UIView+MXNibLoader.h */,
+				32AA3D3C17D39E2C00EC78E0 /* UIView+MXNibLoader.m */,
 			);
 			path = MXNibLoader;
 			sourceTree = "<group>";
@@ -220,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32AA3D1217D39BE700EC78E0 /* InfoPlist.strings in Resources */,
-				32AA3D1A17D39BE700EC78E0 /* Images.xcassets in Resources */,
+				32AA3D3E17D39EF000EC78E0 /* DemoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32AA3D3D17D39E2C00EC78E0 /* UIView+MXNibLoader.m in Sources */,
+				32AA3D3817D39C1200EC78E0 /* MXNibLoader.m in Sources */,
 				32AA3D1817D39BE700EC78E0 /* AppDelegate.m in Sources */,
 				32AA3D1417D39BE700EC78E0 /* main.m in Sources */,
 			);
@@ -358,6 +370,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MXNibLoader/MXNibLoader-Prefix.pch";
 				INFOPLIST_FILE = "MXNibLoader/MXNibLoader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -371,6 +384,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MXNibLoader/MXNibLoader-Prefix.pch";
 				INFOPLIST_FILE = "MXNibLoader/MXNibLoader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

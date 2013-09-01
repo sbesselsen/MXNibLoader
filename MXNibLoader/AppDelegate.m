@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIView+MXNibLoader.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,12 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view = [UIView loadFromNib:@"DemoView"];
+    
+    self.window.rootViewController = vc;
+    
     return YES;
 }
 
